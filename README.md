@@ -1,15 +1,58 @@
-# Prueba tecnica Laravel Garantías Comunitarias
-Deberas realizar en el framework Laravel las siguientes pruebas:
-- Instalar Laravel localmente y configurar las variables de entorno para conectarse a la BD
-- Verificar los posibles errores que impiden que el backend se ejecute
-- Validar que el crud de Entidades funcione correctamente
-- Agregar las relaciones de los modelos contactos y entidades.
-- Crear un crud para contactos controller, con sus respectivas validaciones incluidas las siguientes:
-    - Verificar que exista la entidad en la tabla entidades para poder crear y actualizar el contacto
-    - Evitar que se repita el nombre y el email del contacto
-- Crear una migración para agregar el campo identificacion a contactos obligatorio.
-- Agregar la validacion de identificacion unica para la creación y edición del contacto.
+**Prueba Técnica Laravel - Garantías Comunitarias**  
 
-Crea una rama con tus iniciales y numero de identificación; al finalizar la prueba envia los cambios como un pull request al repositorio.
+A continuación, se describen las tareas que debes realizar en el framework Laravel para completar esta prueba técnica:  
 
-En caso de presentar dificultades con el pull request a git, comprimir la carpeta de laravel omitiendo la carpeta vendor, subelo a tu onedrive, google drive o repositorio de archivos compartiendo el link en el email de la persona que te envió la prueba.
+---
+
+### **Tareas a realizar**  
+
+1. **Configuración inicial:**  
+   - Instala Laravel localmente en tu entorno de desarrollo.  
+   - Configura las variables de entorno en el archivo `.env` para establecer la conexión a la base de datos.  
+
+2. **Solución de errores:**  
+   - Identifica y corrige los posibles errores que impidan la correcta ejecución del backend.  
+
+3. **CRUD de Entidades:**  
+   - Verifica que el CRUD de Entidades funcione correctamente.  
+   - Realiza las correcciones necesarias para garantizar su funcionalidad.  
+
+4. **Relaciones de modelos:**  
+   - Define las relaciones entre los modelos `Contactos` y `Entidades`, asegurando que estén correctamente configuradas en los modelos respectivos.  
+
+5. **CRUD de Contactos:**  
+   - Crea un controlador para `Contactos` con las siguientes validaciones:  
+     - **Entidad existente:** Verifica que la entidad asociada exista en la tabla `entidades` antes de crear o actualizar un contacto.  
+     - **Evitar duplicados:** Asegúrate de que no se repitan el nombre y el email del contacto en la base de datos.  
+   - Implementa todas las operaciones básicas del CRUD (crear, leer, actualizar y eliminar).  
+
+6. **Migración de Contactos:**  
+   - Crea una migración para agregar un campo `identificacion` obligatorio en la tabla `contactos`.  
+   - Asegúrate de que el campo `identificacion` sea único y obligatorio para la creación y edición de contactos.  
+
+---
+
+### **Instrucciones de entrega**  
+
+1. **Rama para cambios:**  
+   - Crea una rama en el repositorio siguiendo el formato: **[Tus iniciales]_[Número de identificación]**.  
+   - Realiza todos los cambios necesarios en esta rama.  
+
+2. **Pull Request:**  
+   - Una vez completadas las tareas, sube tus cambios al repositorio.  
+   - Crea un **Pull Request** hacia la rama principal del repositorio original.  
+
+3. **Entrega alternativa:**  
+   - Si encuentras dificultades para realizar el Pull Request, sigue estos pasos:  
+     - Comprime la carpeta del proyecto Laravel.  
+     - Excluye la carpeta `vendor` para reducir el tamaño del archivo.  
+     - Sube el archivo comprimido a una plataforma de almacenamiento en la nube (OneDrive, Google Drive, etc.).  
+     - Comparte el enlace de descarga en un correo dirigido a la persona que te envió esta prueba.  
+
+4. **Formato de entrega por correo:**  
+   - Incluye en el correo una descripción breve del trabajo realizado y cualquier detalle relevante sobre la prueba.  
+   - Si usaste almacenamiento en la nube, proporciona el enlace de descarga al archivo comprimido.  
+
+---
+
+Si tienes preguntas o necesitas asistencia técnica durante la ejecución de esta prueba, comunícate con el contacto que te proporcionó esta tarea. ¡Éxito en la prueba! 😊
