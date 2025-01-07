@@ -16,8 +16,12 @@ class EntidadController extends Controller
      */
     public function index()
     {
-        $entidades = Entidad::all();
-        return response()->json($entidades, Response::HTTP_OK);
+        try {
+            $entidades = Entidad::all();
+            return response()->json($entidades, Response::HTTP_OK);
+        } catch (\Exception $e) {
+            return response()->json(['error' => $e->getMessage()], Response::HTTP_INTERNAL_SERVER_ERROR);
+        }
     }
 
     /**
